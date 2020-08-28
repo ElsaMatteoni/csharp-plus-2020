@@ -16,7 +16,7 @@ namespace Session03Nubers
             var inputArray = input.Split(",", StringSplitOptions.RemoveEmptyEntries);
             double?[] numberArray = new double?[inputArray.Length];
             int sum = 0;
-
+            
            
             for (int i = 0; i < inputArray.Length; i++)
             {
@@ -37,11 +37,16 @@ namespace Session03Nubers
             foreach (int number in numberArray)
             {
                 Console.WriteLine("Värde: " + number.ToString());
+                
+                
+                
                 sum += number;
+                
 
             }
-            
-            Console.WriteLine("Medelvärdet är: " + XX / numberArray.Length);
+            Console.WriteLine("Det högsta värdet är: " + );
+            Console.WriteLine("Det lägsta värdet är: " + );
+            Console.WriteLine("Medelvärdet är: " + sum / numberArray.Length);
         }
     }
 }
